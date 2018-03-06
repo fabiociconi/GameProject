@@ -37,14 +37,4 @@ public class PlayerShoot : MonoBehaviour {
             player.GetComponent<Animator>().SetBool("Shot", false);
         }
     }
-
-    private void OnMouseDown()
-    {
-        
-    }
-
-    private void OnMouseUp()
-    {
-        
-    }
 }

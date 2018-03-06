@@ -19289,6 +19289,46 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4339257252539822, guid: ebfc5d0de0ef306439272779568e4a76, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055513249646228, guid: ebfc5d0de0ef306439272779568e4a76, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0.5548303
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055513249646228, guid: ebfc5d0de0ef306439272779568e4a76, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.83196354
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055513249646228, guid: ebfc5d0de0ef306439272779568e4a76, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -67.398
+      objectReference: {fileID: 0}
+    - target: {fileID: 4339257252539822, guid: ebfc5d0de0ef306439272779568e4a76, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 70802743432225430, guid: ebfc5d0de0ef306439272779568e4a76,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 0.35861588
+      objectReference: {fileID: 0}
+    - target: {fileID: 70802743432225430, guid: ebfc5d0de0ef306439272779568e4a76,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 1.4365158
+      objectReference: {fileID: 0}
+    - target: {fileID: 70802743432225430, guid: ebfc5d0de0ef306439272779568e4a76,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: 0.2182846
+      objectReference: {fileID: 0}
+    - target: {fileID: 70802743432225430, guid: ebfc5d0de0ef306439272779568e4a76,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 1.0311432
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ebfc5d0de0ef306439272779568e4a76, type: 2}
   m_IsPrefabParent: 0
