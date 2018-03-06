@@ -8,15 +8,19 @@ public class Player_Control : MonoBehaviour {
     private Rigidbody2D rBody;
     private Vector3 mousePosition;
 
+    private Camera mainCamera;
+
     // Use this for initialization
     void Start () {
         rBody = GetComponent<Rigidbody2D>();
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+
+
+    // Update is called once per frame
+    void Update()
+    {
+    }
 
     void FixedUpdate(){
         Vector2 positionOnScreen = Camera.main.WorldToViewportPoint(transform.position);

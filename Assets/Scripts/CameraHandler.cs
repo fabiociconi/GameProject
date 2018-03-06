@@ -1,14 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class CameraHandler : MonoBehaviour
 {
     private Transform player;
 
-    public Vector2 XLimits = new Vector2(3, 3);
-    public Vector2 YLimits = new Vector2(3, 3);
+    public Vector2 XLimits = new Vector2(2, 2);
+    public Vector2 YLimits = new Vector2(2, 2);
     public Vector2 smoothing = new Vector2(3, 3);
-    
+
     void Awake()
     {
         player = GameObject.Find("Snake").transform;
@@ -17,6 +18,20 @@ public class CameraHandler : MonoBehaviour
 
     void Update()
     {
+
+        // Mouse wheel zoom in
+        if (Input.GetAxis("Mouse ScrollWheel") > 0)
+        {
+            if (GetComponent<Camera>().orthographicSize > 5)
+                 GetComponent<Camera>().orthographicSize--;
+        }
+        // Mouse wheel zoom out
+        if (Input.GetAxis("Mouse ScrollWheel") < 0)
+        {
+            if (GetComponent<Camera>().orthographicSize <20 )
+                GetComponent<Camera>().orthographicSize++;
+        }
+        //
         var x = transform.position.x;
         var y = transform.position.y;
 
@@ -26,11 +41,12 @@ public class CameraHandler : MonoBehaviour
         if (x <= XLimits.x)
         {
             x = XLimits.x;
-        }else if(x >= XLimits.y)
+        }
+        else if (x >= XLimits.y)
         {
             x = XLimits.y;
         }
-        
+
         if (y <= YLimits.x)
         {
             y = YLimits.x;
@@ -41,5 +57,7 @@ public class CameraHandler : MonoBehaviour
         }
 
         transform.position = new Vector3(x, y, transform.position.z);
+
     }
+
 }
