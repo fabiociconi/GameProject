@@ -1,16 +1,25 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 
-public class CameraHandler : MonoBehaviour {
+public class CameraHandler : MonoBehaviour
+{
+    private Transform player;
+    public Vector2 smoothing = new Vector2(3, 3);
+    
+    void Awake()
+    {
+        player = GameObject.Find("Snake").transform;
+        transform.position = new Vector3(player.position.x, player.position.y, transform.position.z);
+    }
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    void Update()
+    {
+        var x = transform.position.x;
+        var y = transform.position.y;
+        
+        x = Mathf.Lerp(x, player.position.x, smoothing.x * Time.deltaTime);
+        y = Mathf.Lerp(y, player.position.y, smoothing.y * Time.deltaTime);
+
+        transform.position = new Vector3(x, y, transform.position.z);
+    }
 }
