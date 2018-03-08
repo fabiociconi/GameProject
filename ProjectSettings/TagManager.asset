@@ -55,6 +55,9 @@ TagManager:
   - name: Objects
     uniqueID: 1215454153
     locked: 0
+  - name: Characters
+    uniqueID: 867563005
+    locked: 0
   - name: Aim
     uniqueID: 3685313581
     locked: 0
