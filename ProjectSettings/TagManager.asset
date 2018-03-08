@@ -46,6 +46,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Houses
+    uniqueID: 3506566031
+    locked: 0
+  - name: Road
+    uniqueID: 2316474429
+    locked: 0
+  - name: Objects
+    uniqueID: 1215454153
+    locked: 0
   - name: Aim
     uniqueID: 3685313581
     locked: 0
