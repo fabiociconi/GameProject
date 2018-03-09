@@ -13,7 +13,7 @@ public class Fire : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Fire")
         {
-            Physics.IgnoreCollision(gameObject.GetComponent<Collider>(), collision.gameObject.GetComponent<Collider>());
+            Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), collision.gameObject.GetComponent<Collider2D>());
         }
 
         if (collision.gameObject.tag == "Enemy")
