@@ -157,7 +157,7 @@ TilemapRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e60760b9aef1fe447b309768c1bae995, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -27623,6 +27623,48 @@ Transform:
   m_PrefabParentObject: {fileID: 4049880666229802, guid: 313b8d2a0f9472c4cb7ed45bcf3e4b2b,
     type: 2}
   m_PrefabInternal: {fileID: 843512575}
+--- !u!1001 &868402486
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4149414153002436, guid: 6fa4023b65828f94998cb4ed6f682ca2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 164.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149414153002436, guid: 6fa4023b65828f94998cb4ed6f682ca2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 42.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149414153002436, guid: 6fa4023b65828f94998cb4ed6f682ca2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.5913917
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149414153002436, guid: 6fa4023b65828f94998cb4ed6f682ca2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149414153002436, guid: 6fa4023b65828f94998cb4ed6f682ca2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149414153002436, guid: 6fa4023b65828f94998cb4ed6f682ca2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149414153002436, guid: 6fa4023b65828f94998cb4ed6f682ca2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149414153002436, guid: 6fa4023b65828f94998cb4ed6f682ca2, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 6fa4023b65828f94998cb4ed6f682ca2, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &898763181
 Prefab:
   m_ObjectHideFlags: 0
@@ -40430,6 +40472,11 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 1400936485}
+    - target: {fileID: 114203610158765626, guid: 837ae4a3ddc7b684582c0b3ec9117366,
+        type: 2}
+      propertyPath: bulletSpeed
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 837ae4a3ddc7b684582c0b3ec9117366, type: 2}
   m_IsPrefabParent: 0
