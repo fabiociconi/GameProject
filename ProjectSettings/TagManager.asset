@@ -8,6 +8,8 @@ TagManager:
   - Fire
   - LeftHand
   - RightHand
+  - AimLimits
+  - Score
   layers:
   - Default
   - TransparentFX
@@ -63,6 +65,6 @@ TagManager:
   - name: Aim
     uniqueID: 3685313581
     locked: 0
-  - name: Beach
-    uniqueID: 3761427069
+  - name: Canvas
+    uniqueID: 3799353863
     locked: 0

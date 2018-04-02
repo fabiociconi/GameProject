@@ -7,6 +7,7 @@ public class AimHandler : MonoBehaviour
 
     private Vector3 mousePosition;
     public float moveSpeed = 0.1f;
+    public GameObject player;
 
     // Use this for initialization
     void Start()
