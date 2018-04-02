@@ -63,3 +63,6 @@ TagManager:
   - name: Aim
     uniqueID: 3685313581
     locked: 0
+  - name: Beach
+    uniqueID: 3761427069
+    locked: 0
