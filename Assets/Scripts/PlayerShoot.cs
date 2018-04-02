@@ -5,6 +5,7 @@ public class PlayerShoot : MonoBehaviour
 
     public GameObject player;
     public GameObject bullet;
+    public float bulletSpeed = 40;
 
     private int gun = 0;
     private bool rightGun = false;
@@ -40,16 +41,16 @@ public class PlayerShoot : MonoBehaviour
 
     private void Shoot()
     {
-        Transform hip;
-
-        hip = rightGun
+        Transform hip = rightGun
                ? player.transform.Find("Bones/Hip/RightArmIk")
                : player.transform.Find("Bones/Hip/LeftArmIk");
 
         rightGun = !rightGun;
 
         var bulletObject = Instantiate(bullet, hip.transform.position, Quaternion.identity);
-        bulletObject.GetComponent<Rigidbody2D>().AddForce((transform.position - player.transform.position) * 5, ForceMode2D.Impulse);
+        var targetDirection = (transform.position - player.transform.position);
+
+        bulletObject.GetComponent<Rigidbody2D>().velocity = targetDirection.normalized * bulletSpeed;
         Destroy(bulletObject, 1.0f);
 
         canShoot = false;
