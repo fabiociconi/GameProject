@@ -68,3 +68,6 @@ TagManager:
   - name: Canvas
     uniqueID: 3799353863
     locked: 0
+  - name: Beach
+    uniqueID: 1777134213
+    locked: 0
