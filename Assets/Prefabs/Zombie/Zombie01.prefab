@@ -733,8 +733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cbddd11726bd364aa6b164cb7108b73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  attackRange: 4
+  attackRange: 40
 --- !u!114 &114231455747882848
 MonoBehaviour:
   m_ObjectHideFlags: 1

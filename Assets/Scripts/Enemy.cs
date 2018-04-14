@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public Transform target;
-
     public float attackRange;
-
     public enum State { Idle, Chasing, Attacking };
 
+    private Transform target;
     private State currentState;
     private float myCollisionRadius;
 
     void Start()
     {
+        target = GameObject.FindGameObjectsWithTag("Player")[0].transform;
         currentState = State.Idle;
     }
 
@@ -36,6 +35,11 @@ public class Enemy : MonoBehaviour
             }
 
             currentState = State.Idle;
+        }
+
+        if (distanceToPlayer > attackRange * 2)
+        {
+            Destroy(gameObject);
         }
     }
 
