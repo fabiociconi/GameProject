@@ -32,8 +32,8 @@ public class Fire : MonoBehaviour
             scoreValue.text = score.ToString();
 
 
-            var blood = Instantiate(bloods[0], collision.gameObject.transform);
-            blood.transform.parent = GameObject.FindGameObjectsWithTag("Canvas")[0].transform;
+            //var blood = Instantiate(bloods[0], collision.gameObject.transform);
+            //blood.transform.parent = GameObject.FindGameObjectsWithTag("Canvas")[0].transform;
 
             Destroy(collision.gameObject);
         }
