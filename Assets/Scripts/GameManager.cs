@@ -1,11 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance ;
-    private int score;
+
+    public float levelStartDelay = 2f;
+    private Text levelText;
+
+    private GameObject backgroundLevelTransition;
+    private int level = 1;
+
+    public static GameManager instance = null ;
+    private int score = 0;
     private int health = 100;
 
     private void Awake()
@@ -20,18 +29,20 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
-
+     
     }
 
-    public void Pause(bool paused)
+    public void Transition()
     {
-        
+        levelText.text = "Level"+ level;
+        SceneManager.LoadScene("Level" + level.ToString());
     }
 
-    public void Quit()
+ 
+    public void GameOver()
     {
-        Debug.Log("Quit!");
-        Application.Quit();
+        backgroundLevelTransition.SetActive(true);
+        enabled = false;
     }
 
     public int AddScore(int aux)
