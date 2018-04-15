@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Fire : MonoBehaviour {
+public class Fire : MonoBehaviour
+{
+
+    public GameObject[] bloods;
 
     void FireDone()
     {
@@ -19,10 +22,18 @@ public class Fire : MonoBehaviour {
 
         if (collision.gameObject.tag == "Enemy")
         {
+
             var scoreValue = GameObject.FindGameObjectsWithTag("Score")[0].GetComponent<Text>();
-            int score = int.Parse(scoreValue.text);
-            int newScore = score + 10;
-            scoreValue.text = newScore.ToString();
+
+    
+            //por enquanto descontando 10 pontos fixos
+            var score = GameManager.instance.AddScore(10);
+            Debug.Log("ScoreClass: " + score.ToString());
+            scoreValue.text = score.ToString();
+
+
+            //var blood = Instantiate(bloods[0], collision.gameObject.transform);
+            //blood.transform.parent = GameObject.FindGameObjectsWithTag("Canvas")[0].transform;
 
             Destroy(collision.gameObject);
         }
