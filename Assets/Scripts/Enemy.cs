@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour
     public float attackRange;
 
 
-    public enum State { Idle, Stopping };
+    public enum State { Idle, Stopping, Attacking };
     private Animator animator;
 
 
@@ -29,6 +29,13 @@ public class Enemy : MonoBehaviour
             currentState = State.Stopping;
             animator.SetBool("Walk", false);
             animator.SetBool("Atack", false);
+        }
+
+        if (collision.gameObject.tag.Equals("Player"))
+        {
+            currentState = State.Attacking;
+            animator.SetBool("Walk", false);
+            animator.SetBool("Atack", true);
         }
     }
 
@@ -75,7 +82,7 @@ public class Enemy : MonoBehaviour
             float interpolation = percent;
             transform.position = Vector3.Lerp(originalPosition, attackPosition, interpolation);
             animator.SetBool("Walk", true);
-            animator.SetBool("Atack", true);
+            animator.SetBool("Atack", false);
 
             yield return null;
         }
