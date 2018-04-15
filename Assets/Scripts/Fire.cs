@@ -23,14 +23,10 @@ public class Fire : MonoBehaviour
 
             var scoreValue = GameObject.FindGameObjectsWithTag("Score")[0].GetComponent<Text>();
 
-
-           //int  score = int.Parse(scoreValue.text);
-
-           // var score = GameManager.instance.score + 10;
+    
+            //por enquanto descontando 10 pontos fixos
             var score = GameManager.instance.AddScore(10);
-            //newScore = score + 10;
             Debug.Log("ScoreClass: " + score.ToString());
-            // scoreValue.text = newScore.ToString();
             scoreValue.text = score.ToString();
 
             Destroy(collision.gameObject);
