@@ -24,9 +24,9 @@ public class Fire : MonoBehaviour
 
     
             //por enquanto descontando 10 pontos fixos
-            //var score = GameManager.instance.AddScore(10);
+            var score = GameManager.instance.AddScore(10);
             //Debug.Log("ScoreClass: " + score.ToString());
-            //scoreValue.text = score.ToString();
+            scoreValue.text = score.ToString();
 
             GameObject.FindGameObjectsWithTag("Canvas")[0].GetComponent<BloodUIController>().InstantiateBlood();
 

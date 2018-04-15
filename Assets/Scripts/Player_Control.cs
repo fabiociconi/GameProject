@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class Player_Control : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class Player_Control : MonoBehaviour
 
     private Rigidbody2D rBody;
     private Animator animator;
+
 
     void Start()
     {
