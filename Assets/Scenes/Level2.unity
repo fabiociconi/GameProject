@@ -3171,6 +3171,11 @@ Prefab:
       propertyPath: sceneName
       value: Level3
       objectReference: {fileID: 0}
+    - target: {fileID: 224225328290347442, guid: 6fa4023b65828f94998cb4ed6f682ca2,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6fa4023b65828f94998cb4ed6f682ca2, type: 2}
   m_IsPrefabParent: 0
@@ -7125,9 +7130,10 @@ GameObject:
   - component: {fileID: 875160390}
   - component: {fileID: 875160389}
   - component: {fileID: 875160388}
+  - component: {fileID: 875160392}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: Canvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7209,6 +7215,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &875160392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 875160387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38b65fc174767914ca7e0b5b81c029a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloods:
+  - {fileID: 1096524510923346, guid: 276129a943835174297b2b7700698017, type: 2}
+  - {fileID: 1540009828349078, guid: 70af11a85389a0642a3c4714d446fd04, type: 2}
 --- !u!1 &892723432
 GameObject:
   m_ObjectHideFlags: 0
@@ -32509,6 +32529,11 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 2127268791}
+    - target: {fileID: 114203610158765626, guid: 837ae4a3ddc7b684582c0b3ec9117366,
+        type: 2}
+      propertyPath: GunSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 1e19089d18fed5d4a9e7401e94731221, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 837ae4a3ddc7b684582c0b3ec9117366, type: 2}
   m_IsPrefabParent: 0
