@@ -6,6 +6,7 @@ public class PlayerShoot : MonoBehaviour
     public GameObject player;
     public GameObject bullet;
     public float bulletSpeed = 40;
+    public AudioClip GunSound;
 
     private int gun = 0;
     private bool rightGun = false;
@@ -49,6 +50,8 @@ public class PlayerShoot : MonoBehaviour
 
         var bulletObject = Instantiate(bullet, hip.transform.position, Quaternion.identity);
         var targetDirection = (transform.position - player.transform.position);
+
+        GetComponent<AudioSource>().PlayOneShot(GunSound);
 
         bulletObject.GetComponent<Rigidbody2D>().velocity = targetDirection.normalized * bulletSpeed;
         Destroy(bulletObject, 1.0f);

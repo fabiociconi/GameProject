@@ -21261,6 +21261,21 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114970918491642180, guid: 394eaf7b061bdef4bb7481dbddbad848,
+        type: 2}
+      propertyPath: waveSize
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114970918491642180, guid: 394eaf7b061bdef4bb7481dbddbad848,
+        type: 2}
+      propertyPath: maxZombies
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 114970918491642180, guid: 394eaf7b061bdef4bb7481dbddbad848,
+        type: 2}
+      propertyPath: spawnTime
+      value: 7.01
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 394eaf7b061bdef4bb7481dbddbad848, type: 2}
   m_IsPrefabParent: 0

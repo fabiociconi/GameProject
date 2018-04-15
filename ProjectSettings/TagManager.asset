@@ -11,6 +11,7 @@ TagManager:
   - AimLimits
   - Score
   - Environment
+  - Canvas
   layers:
   - Default
   - TransparentFX
