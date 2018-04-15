@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Fire : MonoBehaviour {
 
+    public GameObject[] bloods;
+
     void FireDone()
     {
         Destroy(gameObject);
@@ -23,6 +25,10 @@ public class Fire : MonoBehaviour {
             int score = int.Parse(scoreValue.text);
             int newScore = score + 10;
             scoreValue.text = newScore.ToString();
+
+
+            var blood = Instantiate(bloods[0], collision.gameObject.transform);
+            blood.transform.parent = GameObject.FindGameObjectsWithTag("Canvas")[0].transform;
 
             Destroy(collision.gameObject);
         }
