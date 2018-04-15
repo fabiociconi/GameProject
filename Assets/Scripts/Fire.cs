@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Fire : MonoBehaviour {
+public class Fire : MonoBehaviour
+{
 
     void FireDone()
     {
@@ -19,10 +20,18 @@ public class Fire : MonoBehaviour {
 
         if (collision.gameObject.tag == "Enemy")
         {
+
             var scoreValue = GameObject.FindGameObjectsWithTag("Score")[0].GetComponent<Text>();
-            int score = int.Parse(scoreValue.text);
-            int newScore = score + 10;
-            scoreValue.text = newScore.ToString();
+
+
+           //int  score = int.Parse(scoreValue.text);
+
+           // var score = GameManager.instance.score + 10;
+            var score = GameManager.instance.AddScore(10);
+            //newScore = score + 10;
+            Debug.Log("ScoreClass: " + score.ToString());
+            // scoreValue.text = newScore.ToString();
+            scoreValue.text = score.ToString();
 
             Destroy(collision.gameObject);
         }
