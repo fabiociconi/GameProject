@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log("Awoke Singleton Instance: " + gameObject.GetInstanceID());
+        Debug.Log("Singleton Instance: " + gameObject.GetInstanceID());
         if (instance == null)
         {
             instance = this;
