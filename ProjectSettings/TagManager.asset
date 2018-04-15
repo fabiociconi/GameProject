@@ -10,6 +10,7 @@ TagManager:
   - RightHand
   - AimLimits
   - Score
+  - Environment
   layers:
   - Default
   - TransparentFX

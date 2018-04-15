@@ -720,7 +720,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1052295464705028}
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 43973849575887118, guid: 7df8763a3303ae4418a2844806c7eeb9, type: 2}
 --- !u!61 &61503337244831130
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -1169,7 +1169,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 43344483018469088, guid: 13de8a25bb18e224e8450f1a3571ead9, type: 2}
   m_Bones:
   - {fileID: 4502350343492908}
   - {fileID: 4119576022210780}
@@ -1218,7 +1218,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 43622810306500782, guid: a52b48ee059a3a04d9e41ba38ff71eac, type: 2}
   m_Bones:
   - {fileID: 4863348248907238}
   - {fileID: 4603884893443994}
@@ -1267,7 +1267,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 43739744815189602, guid: 6606c4dfaab725d42b4948ce24656eb3, type: 2}
   m_Bones:
   - {fileID: 4237272168158980}
   m_BlendShapeWeights: []
@@ -1314,7 +1314,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 43620505981020632, guid: 2400512398e9ea44880081164be9fe8d, type: 2}
   m_Bones:
   - {fileID: 4399257467805542}
   m_BlendShapeWeights: []
@@ -1361,7 +1361,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 43246286240041542, guid: e03e31277b1f02e4190f08c400984bd4, type: 2}
   m_Bones:
   - {fileID: 4880216907627526}
   m_BlendShapeWeights: []
@@ -1408,7 +1408,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 43120368917002598, guid: f7cdabd8e2ac7444fad828d9bbf7ccd4, type: 2}
   m_Bones:
   - {fileID: 4960452586028306}
   m_BlendShapeWeights: []
@@ -1455,7 +1455,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 43330958068220486, guid: 6f2ab9307dd9fe6419707726615d7ba6, type: 2}
   m_Bones:
   - {fileID: 4349042536035280}
   m_BlendShapeWeights: []
