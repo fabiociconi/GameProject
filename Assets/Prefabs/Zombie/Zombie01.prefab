@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 4773465901369758}
   - component: {fileID: 95522448248251268}
   - component: {fileID: 114222645591431168}
-  - component: {fileID: 61449143004012952}
+  - component: {fileID: 58400922235041642}
   m_Layer: 0
   m_Name: Zombie01
   m_TagString: Enemy
@@ -455,7 +455,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1977786275385482}
-  m_LocalRotation: {x: 0, y: 0, z: 0.67752534, w: 0.7354995}
+  m_LocalRotation: {x: 0, y: 0, z: 0.68683785, w: 0.72681075}
   m_LocalPosition: {x: -0.1035229, y: -0.45789874, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -466,7 +466,7 @@ Transform:
   - {fileID: 4765437289300378}
   m_Father: {fileID: 4458386431552140}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 85.301}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 86.761}
 --- !u!4 &4458386431552140
 Transform:
   m_ObjectHideFlags: 1
@@ -569,7 +569,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1899180610853132}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -207.74405, y: 78.85656, z: 0}
+  m_LocalPosition: {x: -232.79, y: 78.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4593452682661716}
@@ -648,8 +648,8 @@ Transform:
   m_Father: {fileID: 4137619113141884}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -36.256}
---- !u!61 &61449143004012952
-BoxCollider2D:
+--- !u!58 &58400922235041642
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -660,19 +660,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: 0.58922195}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Radius: 1.089222
 --- !u!95 &95522448248251268
 Animator:
   serializedVersion: 3
@@ -702,7 +692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 1.0679569
+  m_Length: 1.0679604
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4890067804979684}
   m_AttachedIK: {fileID: 0}
@@ -718,7 +708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.7011757
+  m_Length: 0.70117855
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4603747113718154}
   m_AttachedIK: {fileID: 0}
@@ -804,7 +794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.16499211
+  m_Length: 0.16499104
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4282863575556802}
   m_AttachedIK: {fileID: 0}
@@ -836,7 +826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.18999846
+  m_Length: 0.1899985
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4765437289300378}
   m_AttachedIK: {fileID: 0}
@@ -852,7 +842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.4302883
+  m_Length: 0.43028188
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4327021030773908}
   m_AttachedIK: {fileID: 0}
@@ -962,7 +952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.959981
+  m_Length: 0.95998377
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4137619113141884}
   m_AttachedIK: {fileID: 0}
@@ -994,7 +984,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.79904795
+  m_Length: 0.79905313
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4929285675316002}
   m_AttachedIK: {fileID: 0}

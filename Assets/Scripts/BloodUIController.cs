@@ -19,6 +19,6 @@ public class BloodUIController : MonoBehaviour {
 
     public void InstantiateBlood ()
     {
-        var blood = Instantiate(bloods[Mathf.RoundToInt(Random.Range(0, bloods.Length))], this.gameObject.transform);
+        Instantiate(bloods[Mathf.RoundToInt(Random.Range(0, bloods.Length))], this.gameObject.transform);
     }
 }

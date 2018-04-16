@@ -85,7 +85,7 @@ GameObject:
   - component: {fileID: 4721446889700026}
   - component: {fileID: 95175840088018774}
   - component: {fileID: 114595894108430808}
-  - component: {fileID: 61412677696193252}
+  - component: {fileID: 58759334662362616}
   m_Layer: 0
   m_Name: Zombie03
   m_TagString: Enemy
@@ -551,7 +551,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1212537679409514}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -210.51431, y: 77.01895, z: -10}
+  m_LocalPosition: {x: -231.34976, y: 69.97956, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4456286184198098}
@@ -618,8 +618,8 @@ Transform:
   m_Father: {fileID: 4721446889700026}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61412677696193252
-BoxCollider2D:
+--- !u!58 &58759334662362616
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -630,19 +630,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: 0.4202423}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Radius: 0.9202423
 --- !u!95 &95175840088018774
 Animator:
   serializedVersion: 3
@@ -877,7 +867,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.11231439
+  m_Length: 0.112306796
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4168509582353528}
   m_AttachedIK: {fileID: 0}

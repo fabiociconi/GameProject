@@ -26,9 +26,9 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.tag.Equals("Environment"))
         {
             //Destroy(this.gameObject);
-            currentState = State.Stopping;
-            animator.SetBool("Walk", false);
-            animator.SetBool("Atack", false);
+            //currentState = State.Stopping;
+            //animator.SetBool("Walk", false);
+            //animator.SetBool("Atack", false);
         }
 
         if (collision.gameObject.tag.Equals("Player"))

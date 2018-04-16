@@ -215,8 +215,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4977624793310298}
   - component: {fileID: 114323370132205838}
-  - component: {fileID: 61864569223467640}
   - component: {fileID: 95649726221269166}
+  - component: {fileID: 58277631761673460}
   m_Layer: 0
   m_Name: Zombie04
   m_TagString: Enemy
@@ -651,7 +651,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1513323024577454}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -212.475, y: 79.715, z: -4.956622}
+  m_LocalPosition: {x: -222.93791, y: 69.09989, z: -4.956622}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4967579727275142}
@@ -721,8 +721,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1708323932698064}
   m_Mesh: {fileID: 43973849575887118, guid: 7df8763a3303ae4418a2844806c7eeb9, type: 2}
---- !u!61 &61864569223467640
-BoxCollider2D:
+--- !u!58 &58277631761673460
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -733,19 +733,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0.14954376, y: 0.46958923}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Radius: 1.3066483
 --- !u!95 &95649726221269166
 Animator:
   serializedVersion: 3
@@ -795,7 +785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.50079596
+  m_Length: 0.50110096
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4321882354797066}
   m_AttachedIK: {fileID: 0}
@@ -827,7 +817,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.96721464
+  m_Length: 0.9672195
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4477268017747504}
   m_AttachedIK: {fileID: 0}
@@ -887,7 +877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.11430583
+  m_Length: 0.4562295
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4433622941683558}
   m_AttachedIK: {fileID: 0}
@@ -923,7 +913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.8983401
+  m_Length: 0.89816785
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4018248662714548}
   m_AttachedIK: {fileID: 0}
@@ -1017,7 +1007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.7758731
+  m_Length: 0.77583104
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4481449722340610}
   m_AttachedIK: {fileID: 0}
@@ -1111,7 +1101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.6802264
+  m_Length: 0.6802242
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4065642978129274}
   m_AttachedIK: {fileID: 0}
