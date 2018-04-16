@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class Fire : MonoBehaviour
 {
     public GameObject blood;
-    public Gam
 
     void FireDone()
     {
