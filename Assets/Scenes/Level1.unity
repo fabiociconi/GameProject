@@ -21495,6 +21495,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114970918491642180, guid: 394eaf7b061bdef4bb7481dbddbad848,
+        type: 2}
+      propertyPath: Zombies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4869153489485066, guid: 394eaf7b061bdef4bb7481dbddbad848, type: 2}
       propertyPath: m_LocalPosition.x
       value: -223.43
@@ -21551,6 +21556,18 @@ Prefab:
       propertyPath: spawnTime
       value: 7.01
       objectReference: {fileID: 0}
+    - target: {fileID: 114970918491642180, guid: 394eaf7b061bdef4bb7481dbddbad848,
+        type: 2}
+      propertyPath: Zombies.Array.data[1]
+      value: 
+      objectReference: {fileID: 1092952705315656, guid: 9d5c685052ef7e942bc0d39e7cc3f0a3,
+        type: 2}
+    - target: {fileID: 114970918491642180, guid: 394eaf7b061bdef4bb7481dbddbad848,
+        type: 2}
+      propertyPath: Zombies.Array.data[2]
+      value: 
+      objectReference: {fileID: 1513323024577454, guid: 10f037b3cc4ede648893c430feaf6166,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 394eaf7b061bdef4bb7481dbddbad848, type: 2}
   m_IsPrefabParent: 0
