@@ -7,7 +7,9 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance = null ;
-    private int score = 0;
+   
+    public int score { get; set; }
+
     private int bullets = 100;
 
     private void Awake()
