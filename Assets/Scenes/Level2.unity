@@ -32761,7 +32761,7 @@ Prefab:
     - target: {fileID: 114203610158765626, guid: 837ae4a3ddc7b684582c0b3ec9117366,
         type: 2}
       propertyPath: bulletSpeed
-      value: 40
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 114886157253913828, guid: 837ae4a3ddc7b684582c0b3ec9117366,
         type: 2}

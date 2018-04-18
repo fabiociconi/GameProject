@@ -5,7 +5,7 @@ public class PlayerShoot : MonoBehaviour
 
     public GameObject player;
     public GameObject bullet;
-    public float bulletSpeed = 40;
+    public float bulletSpeed = 90;
     public AudioClip GunSound;
 
     private int gun = 0;
