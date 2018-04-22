@@ -12,6 +12,8 @@ public class Enemy : MonoBehaviour
     private State currentState = State.Idle;
     private float distanceToPlayer;
     private Rigidbody2D rBody;
+    private Vector2 XLimits;
+    private Vector2 YLimits;
 
     void Start()
     {
@@ -19,11 +21,21 @@ public class Enemy : MonoBehaviour
         currentState = State.Idle;
         animator = GetComponent<Animator>();
         rBody = GetComponent<Rigidbody2D>();
+
+        XLimits = GameObject.Find("Main Camera").GetComponent<CameraHandler>().XLimits;
+        YLimits = GameObject.Find("Main Camera").GetComponent<CameraHandler>().YLimits;
     }
 
     void FixedUpdate()
     {
         distanceToPlayer = Vector3.Distance(transform.position, target.position);
+
+        if (distanceToPlayer > followRange * 2 || 
+            transform.position.x < XLimits.x - 28 || transform.position.x > XLimits.y + 15 ||
+            transform.position.y < YLimits.x - 28 || transform.position.y > YLimits.y + 15)
+        {
+            Destroy(gameObject);
+        }
 
         if (rBody.velocity.x > 0 || rBody.velocity.y > 0)
         {
@@ -65,7 +77,7 @@ public class Enemy : MonoBehaviour
         Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, q, 90 * Time.deltaTime);
         
-        rBody.velocity = target.transform.position - transform.position;
+        rBody.velocity = (target.transform.position - transform.position).normalized * 11;
     }
 
     private void Attack()

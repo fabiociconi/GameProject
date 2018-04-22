@@ -217,6 +217,7 @@ GameObject:
   - component: {fileID: 114323370132205838}
   - component: {fileID: 95649726221269166}
   - component: {fileID: 58277631761673460}
+  - component: {fileID: 50117773201642822}
   m_Layer: 0
   m_Name: Zombie04
   m_TagString: Enemy
@@ -721,6 +722,26 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1708323932698064}
   m_Mesh: {fileID: 43973849575887118, guid: 7df8763a3303ae4418a2844806c7eeb9, type: 2}
+--- !u!50 &50117773201642822
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1513323024577454}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!58 &58277631761673460
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -848,7 +869,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cbddd11726bd364aa6b164cb7108b73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 40
+  followRange: 40
+  attackRange: 5
 --- !u!114 &114334989004113250
 MonoBehaviour:
   m_ObjectHideFlags: 1
