@@ -10,7 +10,6 @@ public class LoadNextLevel : MonoBehaviour
         if (collision.tag == "Player")
         {
             SceneManager.LoadScene(sceneName);
-
         }
     }
 }

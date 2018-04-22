@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance = null ;
    
     public int score { get; set; }
-
+    public int health = 100;
     private int bullets = 100;
 
     private void Awake()
@@ -27,10 +27,17 @@ public class GameManager : MonoBehaviour
      
     }
 
- 
+    private void Update()
+    {
+        if (health < 1 && SceneManager.GetActiveScene().name != "FinalScene")
+        {
+            GameOver();
+        }   
+    }
+
     public void GameOver()
     {
-       
+        SceneManager.LoadScene("FinalScene");
     }
 
     public int AddScore(int aux)
@@ -40,5 +47,17 @@ public class GameManager : MonoBehaviour
         //Debug.Log("Score depois: " + score.ToString());
 
         return score;
+    }
+
+    public int AddHealth (int aux)
+    {
+        health += aux;
+        return health;
+    }
+
+    public int RemoveHealth(int aux)
+    {
+        health -= aux;
+        return health;
     }
 }

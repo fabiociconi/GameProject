@@ -33,11 +33,11 @@ public class ZombieSpawn : MonoBehaviour
             float y = 0;
             bool overSomething = true;
 
-            while (Mathf.Abs(x) < 20 || Mathf.Abs(y) < 20 || overSomething)
+            while (Mathf.Abs(x) < 25 || Mathf.Abs(y) < 25 || overSomething)
             {
                 overSomething = false;
-                x = Random.Range(-35, 35);
-                y = Random.Range(-35, 35);
+                x = Random.Range(-60, 60);
+                y = Random.Range(-60, 60);
 
                 zombie.transform.position = new Vector3(x, y, 0) + GameObject.FindGameObjectsWithTag("Player")[0].transform.position;
 

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
@@ -31,8 +32,8 @@ public class Enemy : MonoBehaviour
         distanceToPlayer = Vector3.Distance(transform.position, target.position);
 
         if (distanceToPlayer > followRange * 2 || 
-            transform.position.x < XLimits.x - 28 || transform.position.x > XLimits.y + 15 ||
-            transform.position.y < YLimits.x - 28 || transform.position.y > YLimits.y + 15)
+            transform.position.x < XLimits.x - 28 || transform.position.x > XLimits.y + 28 ||
+            transform.position.y < YLimits.x - 15 || transform.position.y > YLimits.y + 15)
         {
             Destroy(gameObject);
         }
@@ -93,6 +94,12 @@ public class Enemy : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.tag == "Player" && currentState == State.Attacking)
+        {
+            GameManager.instance.RemoveHealth(1);
+            return;
+        }
+
         currentState = State.Attacking;
     }
 }

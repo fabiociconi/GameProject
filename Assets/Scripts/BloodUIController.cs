@@ -5,8 +5,8 @@ using UnityEngine.Experimental.UIElements;
 using UnityEngine.UI;
 
 public class BloodUIController : MonoBehaviour {
-
     public GameObject[] bloods;
+    public UnityEngine.UI.Slider healthUI;
 
     // Use this for initialization
     void Start () {
@@ -17,7 +17,7 @@ public class BloodUIController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        healthUI.value = GameManager.instance.health / 100;
 	}
 
     public void InstantiateBlood ()
