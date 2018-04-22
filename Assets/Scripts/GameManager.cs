@@ -56,6 +56,16 @@ public class GameManager : MonoBehaviour
         return health;
     }
 
+    public void SetImune()
+    {
+        imune = true;
+    }
+
+    public void SetNotImune()
+    {
+        imune = false;
+    }
+
     public int RemoveHealth(int aux)
     {
         if (imune)
