@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance = null ;
+    public static GameManager instance = null;
+    public bool imune = false;
    
     public int score { get; set; }
     public int health = 100;
@@ -51,13 +52,18 @@ public class GameManager : MonoBehaviour
 
     public int AddHealth (int aux)
     {
-        health += aux;
+        health = health + aux;
         return health;
     }
 
     public int RemoveHealth(int aux)
     {
-        health -= aux;
+        if (imune)
+        {
+            return health;
+        }
+
+        health = health - aux;
         return health;
     }
 }
