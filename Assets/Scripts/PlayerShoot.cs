@@ -42,6 +42,11 @@ public class PlayerShoot : MonoBehaviour
 
     private void Shoot()
     {
+        if (GameManager.instance.bullets < 1)
+        {
+            return;
+        }
+
         Transform hip = rightGun
                ? player.transform.Find("Bones/Hip/RightArmIk")
                : player.transform.Find("Bones/Hip/LeftArmIk");
@@ -52,6 +57,7 @@ public class PlayerShoot : MonoBehaviour
         var targetDirection = (transform.position - player.transform.position);
 
         GetComponent<AudioSource>().PlayOneShot(GunSound);
+        GameManager.instance.bullets--;
 
         bulletObject.GetComponent<Rigidbody2D>().velocity = targetDirection.normalized * bulletSpeed;
         Destroy(bulletObject, 1.0f);

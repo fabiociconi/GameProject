@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class BloodUIController : MonoBehaviour {
     public GameObject[] bloods;
     public UnityEngine.UI.Slider healthUI;
+    public Text ammoValue;
 
     // Use this for initialization
     void Start () {
@@ -18,6 +19,7 @@ public class BloodUIController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         healthUI.value = (GameManager.instance.health / 100f);
+        ammoValue.text = GameManager.instance.bullets.ToString();
 	}
 
     public void InstantiateBlood ()

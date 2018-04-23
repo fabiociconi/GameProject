@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
    
     public int Score { get; set; }
     public float health = 100;
-    private int bullets = 100;
+    public int bullets = 100;
 
     private void Awake()
     {
