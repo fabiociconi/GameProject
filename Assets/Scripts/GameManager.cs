@@ -53,6 +53,12 @@ public class GameManager : MonoBehaviour
     public float AddHealth (float aux)
     {
         health = health + aux;
+
+        if (health > 100)
+        {
+            health = 100;
+        }
+
         return health;
     }
 

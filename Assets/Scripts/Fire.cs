@@ -34,7 +34,7 @@ public class Fire : MonoBehaviour
 
             if (num < 30)
             {
-                Instantiate(items[0], transform.position, Quaternion.identity);
+                Instantiate(items[Random.Range(0, items.Length)], transform.position, Quaternion.identity);
             }
 
             Destroy(collision.gameObject);
