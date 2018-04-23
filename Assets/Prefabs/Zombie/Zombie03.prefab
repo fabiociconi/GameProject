@@ -845,6 +845,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followRange: 40
   attackRange: 5
+  attackPower: 3
 --- !u!114 &114615871925722530
 MonoBehaviour:
   m_ObjectHideFlags: 1
