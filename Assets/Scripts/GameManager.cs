@@ -9,8 +9,8 @@ public class GameManager : MonoBehaviour
     public static GameManager instance = null;
     public bool imune = false;
    
-    public int score { get; set; }
-    public int health = 100;
+    public int Score { get; set; }
+    public float health = 100;
     private int bullets = 100;
 
     private void Awake()
@@ -44,13 +44,13 @@ public class GameManager : MonoBehaviour
     public int AddScore(int aux)
     {
        // Debug.Log("Score antes: " + aux.ToString());
-        score  = score + aux;
+        Score  = Score + aux;
         //Debug.Log("Score depois: " + score.ToString());
 
-        return score;
+        return Score;
     }
 
-    public int AddHealth (int aux)
+    public float AddHealth (float aux)
     {
         health = health + aux;
         return health;
@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
         imune = false;
     }
 
-    public int RemoveHealth(int aux)
+    public float RemoveHealth(float aux)
     {
         if (imune)
         {

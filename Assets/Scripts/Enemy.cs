@@ -96,7 +96,8 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player" && currentState == State.Attacking)
         {
-            GameManager.instance.RemoveHealth(1);
+            var randomDamage = Random.Range(0.2f, 0.4f);
+            GameManager.instance.RemoveHealth(randomDamage);
             return;
         }
 
