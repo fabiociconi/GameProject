@@ -74,6 +74,8 @@ public class GameManager : MonoBehaviour
         }
 
         health = health - aux;
+        SetImune();
+        Invoke("SetNotImune", 3f);
         return health;
     }
 }

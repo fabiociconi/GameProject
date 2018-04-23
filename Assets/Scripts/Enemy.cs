@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
     public float followRange = 40;
     public float attackRange = 5;
+    public int attackPower = 3;
     public enum State { Idle, Following, Attacking};
 
     private Animator animator;
@@ -96,7 +97,7 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player" && currentState == State.Attacking)
         {
-            GameManager.instance.RemoveHealth(1);
+            GameManager.instance.RemoveHealth(attackPower);
             return;
         }
 

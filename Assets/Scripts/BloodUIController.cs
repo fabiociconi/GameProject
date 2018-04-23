@@ -17,7 +17,7 @@ public class BloodUIController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        healthUI.value = GameManager.instance.health / 100;
+        healthUI.value = (GameManager.instance.health / 100f);
 	}
 
     public void InstantiateBlood ()

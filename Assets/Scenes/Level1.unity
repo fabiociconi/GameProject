@@ -3310,8 +3310,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -68.1, y: -28.1}
-  m_SizeDelta: {x: 136.3, y: 56.3}
+  m_AnchoredPosition: {x: -92.9, y: -28.1}
+  m_SizeDelta: {x: 161.1, y: 56.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &406314690
 MonoBehaviour:
@@ -21050,7 +21050,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 160.41, y: -28.125}
+  m_AnchoredPosition: {x: 175, y: -28.125}
   m_SizeDelta: {x: 320.83, y: 56.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &717733468
@@ -21702,7 +21702,7 @@ Prefab:
     - target: {fileID: 114970918491642180, guid: 394eaf7b061bdef4bb7481dbddbad848,
         type: 2}
       propertyPath: maxZombies
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 114970918491642180, guid: 394eaf7b061bdef4bb7481dbddbad848,
         type: 2}
