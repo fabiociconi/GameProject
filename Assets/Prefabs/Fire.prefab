@@ -212,6 +212,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blood: {fileID: 1852201505693550, guid: 9ac8c3050e8e1be44b203ac7bb8d317d, type: 2}
+  items:
+  - {fileID: 1814122128443402, guid: 12e45b34d814d5e46b774a0d38819916, type: 2}
 --- !u!212 &212001770264884324
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Fire : MonoBehaviour
 {
     public GameObject blood;
+    public GameObject[] items;
 
     void FireDone()
     {
@@ -21,18 +22,20 @@ public class Fire : MonoBehaviour
 
         if (collision.gameObject.tag == "Enemy")
         {
-
             var scoreValue = GameObject.FindGameObjectsWithTag("Score")[0].GetComponent<Text>();
-
-
-            //por enquanto descontando 10 pontos fixos
+            
             var score = GameManager.instance.AddScore(10);
-            //Debug.Log("ScoreClass: " + score.ToString());
             scoreValue.text = score.ToString();
 
             Instantiate(blood, transform.position, Quaternion.identity);
-            //Instantiate(blood, transform.transform);
             GameObject.FindGameObjectsWithTag("Canvas")[0].GetComponent<BloodUIController>().InstantiateBlood();
+
+            int num = Random.Range(0, 100);
+
+            if (num < 30)
+            {
+                Instantiate(items[0], transform.position, Quaternion.identity);
+            }
 
             Destroy(collision.gameObject);
         }
