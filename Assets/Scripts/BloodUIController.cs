@@ -11,7 +11,7 @@ public class BloodUIController : MonoBehaviour {
     // Use this for initialization
     void Start () {
         var scoreValue = GameObject.FindGameObjectsWithTag("Score")[0].GetComponent<Text>();
-        var score = GameManager.instance.score;
+        var score = GameManager.instance.Score;
         scoreValue.text = score.ToString();
     }
 	
